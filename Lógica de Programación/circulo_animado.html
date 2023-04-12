@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulo animado</title>
+</head>
+<body>
+    <canvas width="600" height="400"> </canvas>
+
+    <script>
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");        
+        pincel.fillStyle = "lightgrey";
+        pincel.fillRect(0,0,600,400); 
+
+        function disenharCircunferencia(x,y,radio){
+            pincel.fillStyle = "blue";
+            pincel.beginPath();
+            pincel.arc(x,y,radio,0,2*Math.PI);
+            pincel.fill();
+        }    
+
+        function limpiarPantalla(){
+            pincel.clearRect(0,0,600,400);
+        }
+
+        var x = 0;
+        var fromLeft = true;
+        var fromRight = false;
+        function actualizarPantalla(){
+            if(fromLeft){
+                limpiarPantalla();
+                disenharCircunferencia(x,20,10);
+                x++;
+            }
+            if(x == 600){
+                fromLeft = false;
+                fromRight = true;
+            }
+            if(x == 0){
+                fromLeft = true;
+                fromRight = false;
+            }
+            if(fromRight){
+                limpiarPantalla();
+                disenharCircunferencia(x,20,10);
+                x--;
+            }
+        }
+
+        setInterval(actualizarPantalla,10);
+
+    </script> 
+</body>
+</html>
