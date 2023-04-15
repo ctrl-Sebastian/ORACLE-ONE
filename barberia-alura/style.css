@@ -250,7 +250,7 @@ td, th{
 }
 
 @media screen and (max-width: 480px){
-    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, footer{
         width: auto;
     }
 
@@ -264,5 +264,13 @@ td, th{
 
     .lista-diferenciales, .imagen-diferenciales{
         width: 100%;
+    }
+
+    .productos{
+        width: 100%;
+    }
+
+    .productos li, img{
+        width: 50%;
     }
 }
