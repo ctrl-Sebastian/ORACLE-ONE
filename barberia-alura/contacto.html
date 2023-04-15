@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="caja">
-            <h1><img src="./imgs/imagenes/logo.png" alt="logo"></h1>
+            <h1><img src="./imgs/imagenes/logo.png" alt="Logo de la barbería Alura"></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -36,32 +36,60 @@
             <label for="mensaje">Mensaje</label>
             <textarea name="Mensaje" id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
             
-            <div>
-                <p>¿Cómo le gustaría que lo contactemos?</p>
+            <fieldset>
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
 
                 <label for="radio-email"><input type="radio" name="contacto" id="radio-email">Email</label>
                 <label for="radio-telefono"><input type="radio" name="contacto" id="radio-telefono">Telefono</label>
                 <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp" checked>Whatsapp</label>
                 
-            </div>
+            </fieldset>
 
-            <label class="checkbox"><input type="checkbox" name="" id="" checked>Le gustaría recibir novedades de la Barbería Alura?</label>
-
-            <div>
-                <p>¿En cuál horario prefiere ser atendido?</p>
+            
+            <fieldset>
+                <legend>¿En cuál horario prefiere ser atendido?</legend>
                 <select name="" id="">
                     <option value="">Mañana</option>
                     <option value="">Tarde</option>
                     <option value="">Noche</option>
                 </select>
-            </div>
+            </fieldset>
+            
+            <label class="checkbox"><input type="checkbox" name="" id="" checked>Le gustaría recibir novedades de la Barbería Alura?</label>
 
-            <input type="submit" value="Enviar formulario">
+            <input type="submit" value="Enviar formulario" class="enviar">
         </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+    
+                <tr>
+                    <td>Miércoles</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+    
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+
     </main>
 
     <footer>
-        <img src="./imgs/imagenes/logo-blanco.png" alt="logo blanco">
+        <img src="./imgs/imagenes/logo-blanco.png" alt="Logo de la barbería Alura blanco">
         <p class="copyright">&copy Copyright Barbería Alura - 2023</p>
     </footer>
 
