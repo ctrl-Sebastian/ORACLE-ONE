@@ -37,3 +37,15 @@ function Desencriptar(){
 
     output.textContent = textoDesencriptado;
 }
+
+function updateClipboard(newClip) {
+    navigator.clipboard.writeText(newClip).then(() => {
+        console.log("Se ha copiado al portapapeles: " + newClip)
+    }, () => {
+        alert("No se pudo copiar al portapapeles")
+    });
+}
+
+function Copiar(){
+    updateClipboard(output.innerHTML);
+}
