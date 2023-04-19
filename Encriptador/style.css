@@ -1,0 +1,106 @@
+*{
+    font-family: 'Chivo Mono', monospace;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px;
+}
+body{
+    color: white;
+    position: relative;
+    background: #373941;
+}
+
+main{
+    margin-top: 25px;
+    border: 5px solid #a0d0ec;
+    border-radius: 25px;
+}
+form{
+    
+}
+
+textarea{
+    width: 577px;
+    height: 48px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    color: #0A3871;
+}
+
+section{
+    top: 25%;
+    left: 70%;
+
+    color: black;
+    padding: 15px;
+    width: 400px;
+    background-color: #a0d0ec;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 15px;
+    gap: 12px;
+
+    width: 680px;
+    height: 67px;
+}
+
+
+.button{
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 400ms;
+}
+
+.encriptar{
+    color: white;
+    background: #0d52a5;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.desencriptar{
+    color: #0A3871;
+    background: #D8DFE8;
+
+    border: 1px solid #0A3871;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+footer{
+    color: black;
+    background-color: #a0d0ec;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px){
+    .buttons{
+        flex-direction: column;
+    }
+}
