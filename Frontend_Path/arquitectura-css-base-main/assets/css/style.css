@@ -1,0 +1,16 @@
+.cabecera{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.menu-lista{
+  display: flex;
+}
+
+.menu-item{
+  display: flex;
+}
