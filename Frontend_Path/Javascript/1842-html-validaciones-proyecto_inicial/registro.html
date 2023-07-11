@@ -18,6 +18,7 @@
             <img src="./assets/img/doguito.svg" alt="Logo Doguito" class="registry-header__logo">
             <h1 class="registry-header__title">PetShop</h1>
         </div>
+
         <section class="cartao">
             <h2 class="card__title">Completa tu registro</h2>
             <form action="./registro_concluido.html" class="formulario flex flex--column">
@@ -28,30 +29,36 @@
                         <label class="input-label" for="name">Nombre</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
+
                     <div class="input-container">
                         <input name="email" id="email" class="input" type="email" placeholder="Email" required>
                         <label class="input-label" for="email">Email</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
+
                     <div class="input-container">
                         <input name="password" id="password" class="input" type="password" placeholder="Contraseña" required minlength="6" maxlength="12">
                         <label class="input-label" for="password">Contraseña</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                 </fieldset>
+
                 <fieldset>
                     <legend class="form__label">Información personal</legend>
                     <div class="input-container">
-                        <input name="birth" id="birth" class="input" type="text" placeholder="Fecha de nacimento">
+                        <input name="birth" id="birth" class="input" type="date" placeholder="Fecha de nacimento">
                         <label class="input-label" for="birth">Fecha de nacimiento</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
+
                     <div class="input-container">
                         <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Número telefónico">
                         <label class="input-label" for="phoneNumber">Número telefónico</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
+
                 </fieldset>
+
                 <fieldset>
                     <legend class="form__label">Dirección</legend>
                     <div class="input-container">
@@ -70,9 +77,12 @@
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                 </fieldset>
+
                 <button class="button">Registrar</a>
             </form>
         </section>
+
     </main>
+    <script src="./js/validaciones.js"></script>
 </body>
 </html>
