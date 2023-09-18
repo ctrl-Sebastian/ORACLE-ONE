@@ -1,0 +1,19 @@
+{
+  "perfiles": [
+    {
+      "nombre": "Sebastian Marrera",
+      "email": "Sebastian@gmail.com",
+      "id": "24e3afe9-da68-40fd-8d6f-e2d04e7fe424"
+    },
+    {
+      "nombre": "papotica",
+      "email": "papotico@papo.com",
+      "id": "b53cdd10-8b4a-45f7-b435-bafca72003e0"
+    },
+    {
+      "nombre": "Jesus",
+      "email": "ajejej@jeje.com",
+      "id": "20768bab-616c-4430-a073-2ceaaa4e55a8"
+    }
+  ]
+}
